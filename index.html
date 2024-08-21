@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/styles/estilo.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div id="acumulado">0</div>
+        <div id="resultado"></div>
+
+        <div class="filas">
+            <button class="tecla" onclick="getNumero('1');">1</button>
+            <button class="tecla" onclick="getNumero('2');">2</button>
+            <button class="tecla" onclick="getNumero('3');">3</button>
+            <button class="tecla" onclick="getOperacion('x');">x</button>
+        </div>
+
+        <div class="filas">
+            <button class="tecla" onclick="getNumero('4');">4</button>
+            <button class="tecla" onclick="getNumero('5');">5</button>
+            <button class="tecla" onclick="getNumero('6');">6</button>
+            <button class="tecla" onclick="getOperacion('-');">-</button>
+        </div>
+
+        <div class="filas">
+            <button class="tecla" onclick="getNumero('7');">7</button>
+            <button class="tecla" onclick="getNumero('8');">8</button>
+            <button class="tecla" onclick="getNumero('9');">9</button>
+            <button class="tecla" onclick="getOperacion('+');">+</button>
+        </div>
+
+        <div class="filas">
+            <button class="tecla" onclick="limpiar();" ondblclick="limpiarAll()">C/CE</button>
+            <button class="tecla" onclick="limpiarCE();">&larr;</button>
+            <button class="tecla" onclick="getNumero('0');">0</button>            
+            <button class="tecla" onclick="getOperacion('/');">/</button>
+        </div>
+
+        <div class="filas">
+            <button class="tecla" onclick="getNumero(',');">,</button>
+            <button class="tecla" onclick="recuperarMemoria();">MR</button>
+            <button class="tecla" onclick="guardarMemoria();">MS</button><!--Cambiar boton a guardar en memoria-->
+            <button class="tecla" onclick="calcular();">=</button>
+        </div>
+    </div>
+
+    <script src="assets/js/calculo.js"></script>
+</body>
+</html>
